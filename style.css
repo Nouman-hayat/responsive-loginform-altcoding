@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+:root{
+    --var-back:#ca1eda;
+    --var-theme:#1a99ee;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--var-back);
+}
+
+.login-wrapper {
+    position: relative;
+    height: 500px;
+    width: 850px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+.left-side {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+ .left-side img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(.9);
+}
+
+ .right-side {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.right-side h1 {
+    margin: 55px 0 40px;
+}
+
+.input-container input[type="password"] {
+    margin: 0 21px 10px 0;
+    width: 270px;
+    height: 40px;
+    border-radius: 3px;
+    background: #e9e9e9;
+    border: 1px solid #e9e9e9;
+    padding-left: 45px;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.input-container i {
+    transform: translateX(35px);
+}
+
+ .input-container input[type="checkbox"] {
+    margin: 0 0 30px -170px;
+}
+
+ .input-container label {
+    color: #575757;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form button {
+    cursor: pointer;
+    background: var(--var-theme);
+    color: #f1f1f1;
+    width: 320px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+form button:hover {
+    background: var(--var-theme);
+}
+
+.social-login p {
+    color: #575757;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.social-login i {
+    cursor: pointer;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin: 10px 2px 0;
+    background: var(--var-theme);
+}
+
+
+
+@media (max-width: 810px) {
+
+    .login-wrapper {
+        width: 400px;
+    }
+
+    .right-side {
+        width: 100%;
+        background: #ffffffdc;
+    }
+
+   .left-side {
+        width: 100%;
+        filter: brightness(1);
+    }
+
+  .input-container input[type="password"] {
+        background: #d4d4d4;
+        border: 1px solid #d4d4d4;
+    }
+
+}
